@@ -1,13 +1,28 @@
-#background{
-    background-color: rgb(27, 122, 199);
-    align-items: flex-end;
+.search-input{
+    flex:auto
 }
 
-.app-name{
-    color:white;
-    align-content: center;
+.working, .lower-half{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50%;
+}
+
+.working{
+    background-color: rgb(27, 122, 199);
+    top: 0;
+    color: white;
+}
+
+.lower-half{
+    bottom: 0;
+    background-color: rgb(134, 191, 238);
 }
 
 .search-input{
-    flex:auto
+ border: none;
+ border-radius: 10px;
+ top: 25%;
+ left: 50%;
 }
