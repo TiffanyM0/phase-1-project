@@ -1,0 +1,13 @@
+#background{
+    background-color: rgb(27, 122, 199);
+    align-items: flex-end;
+}
+
+.app-name{
+    color:white;
+    align-content: center;
+}
+
+.search-input{
+    flex:auto
+}
