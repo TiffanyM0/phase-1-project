@@ -1,4 +1,4 @@
-.search-input{
+.search{
     flex:auto
 }
 
@@ -10,14 +10,15 @@
 }
 
 .working{
-    background-color: rgb(27, 122, 199);
+    background-color:#0484bb;
     top: 0;
     color: white;
+    /* margin: 50%; */
 }
 
 .lower-half{
     bottom: 0;
-    background-color: rgb(134, 191, 238);
+    background-color: #0f445f;
 }
 
 .search-input{
@@ -25,4 +26,18 @@
  border-radius: 10px;
  top: 25%;
  left: 50%;
+}
+
+.search-input{
+    text-align: center;
+}
+
+.working{
+    text-align: center;
+}
+
+.app-name{
+    top:40px;
+    font-family: 'Lucida Sans';
+    font-size: 70px;
 }
