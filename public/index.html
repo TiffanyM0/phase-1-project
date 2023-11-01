@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" size="16x16">    
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" size="16x16"> 
+
     <link href="https://fonts.googleapis.com/css?family=Geologica:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="./style.css">
+
     <title>Free Dictionary</title>
 </head>
 <body>
-    <div id="background" Class="back">
+    <div id="dictionary" Class="main">
         <div class="working">
             <p Class="app-name">Free Dictionary</p>
             <div class="search-input">
-                <input type="textarea" class="search">
-                <input type="button" class="search">
+                <input type="search" class="search" placeholder="Word Search">
+                <button type="button" class="searchButton" id="searchButton"> Search </button>
             </div>
         </div>
+        <div id="wordDescription" class="wordDescription"></div>
         <div class="lower-half">
             <div class="decorate">
                 <p>Background Images of Books</p>

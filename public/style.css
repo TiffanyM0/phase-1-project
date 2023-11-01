@@ -1,7 +1,3 @@
-.search{
-    flex:auto
-}
-
 .working, .lower-half{
     position: fixed;
     left: 0;
@@ -13,7 +9,7 @@
     background-color:#0484bb;
     top: 0;
     color: white;
-    /* margin: 50%; */
+    text-align: center;
 }
 
 .lower-half{
@@ -23,17 +19,17 @@
 
 .search-input{
  border: none;
- border-radius: 10px;
- top: 25%;
- left: 50%;
+ border-radius: 5px;
+ padding: 5px;
+ justify-content: center;
+ display: flex;
+ max-width: 500px;
+ background-color: #0f445f;
+ font: inherit; 
 }
 
-.search-input{
-    text-align: center;
-}
-
-.working{
-    text-align: center;
+.search{
+    width: 100%;
 }
 
 .app-name{
