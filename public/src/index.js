@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded",() => {
     // const options = {
     //   method: "GET",
     //   headers: {
-    //     "X-RapidAPI-Key": "c6079870camsh1a56f6e78d1aed1p1df6e4jsn0ba2ff61ebfe",
+    //     "X-RapidAPI-Key": "",
     //     "X-RapidAPI-Host": "dictionary-by-api-ninjas.p.rapidapi.com",
     //   },
     // };
