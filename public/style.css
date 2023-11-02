@@ -24,7 +24,7 @@
  justify-content: center;
  display: flex;
  max-width: 500px;
- background-color: #0f445f;
+ background-color: white;
  font: inherit; 
 }
 
@@ -36,4 +36,13 @@
     top:40px;
     font-family: 'Lucida Sans';
     font-size: 70px;
+}
+
+.wordDescription{
+    padding: 5px;
+    justify-content: center;
+    height:auto;
+    background-color: whitesmoke;
+    font: inherit;   
+    color: antiquewhite;
 }
