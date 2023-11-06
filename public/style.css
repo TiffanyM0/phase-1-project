@@ -42,11 +42,10 @@
     border: none;
 }
 
-.app-name{
+.title{
     top:40px;
-    font-family: 'Lucida Sans';
+    font-family: cursive;
     font-size: 70px;
-
 }
 
 .working{

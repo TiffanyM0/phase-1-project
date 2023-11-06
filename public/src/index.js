@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",() => {
     let searchInput = document.querySelector("#search");
     let word = searchInput.value;
     console.log(word);
-    word = wordSearch();
+    wordSearch(word);
     // fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
     //   .then((resp) => resp.json())
     //   .then((data) => {
