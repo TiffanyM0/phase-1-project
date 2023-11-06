@@ -45,10 +45,10 @@ function wordSearch(word) {
       // console.log(data[0].meanings[1].definitions[0].definition)
       // console.log(data[0].meanings[1].partOfSpeech)
     });
-  const synonym =`https://www.stands4.com/services/v2/syno.php`
-  fetch(synonym)
-  .then((resp)=> resp.json())
-  .then((data)=>{
-    console.log(data)
-  })
+  // const synonym =`https://www.stands4.com/services/v2/syno.php`
+  // fetch(synonym)
+  // .then((resp)=> resp.json())
+  // .then((data)=>{
+  //   console.log(data)
+  // })
 }
