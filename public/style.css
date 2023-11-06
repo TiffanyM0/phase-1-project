@@ -46,7 +46,13 @@
     top:40px;
     font-family: 'Lucida Sans';
     font-size: 70px;
+
+}
+
+.working{
     background-image:url(./assets/Library.jpg);
+    background-size: cover;
+    background-position: center;   
 }
 
 .wordDescription{
