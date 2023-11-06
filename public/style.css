@@ -21,28 +21,39 @@
  border: none;
  border-radius: 5px;
  padding: 5px;
- justify-content: center;
  display: flex;
  max-width: 500px;
  background-color: white;
  font: inherit; 
+ margin: 1rem auto;
 }
 
 .search{
     width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.searchBtn{
+    border: none;
 }
 
 .app-name{
     top:40px;
     font-family: 'Lucida Sans';
     font-size: 70px;
+    background-image:url(./assets/Library.jpg);
 }
 
 .wordDescription{
     padding: 5px;
     justify-content: center;
     height:auto;
-    background-color: whitesmoke;
+    background-color: #0484bb;
     font: inherit;   
     color: antiquewhite;
 }

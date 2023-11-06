@@ -4,19 +4,19 @@ document.addEventListener("DOMContentLoaded",() => {
     let searchInput = document.querySelector("#search");
     let word = searchInput.value;
     console.log(word);
+    word = wordSearch();
+    // fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+    //   .then((resp) => resp.json())
+    //   .then((data) => {
+    //     console.log(data);
 
-    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
-      .then((resp) => resp.json())
-      .then((data) => {
-        console.log(data);
+    //     let result = document.querySelector("#wordDescription");
+    //     result.innerHTML = `<p>${data[0].meanings[0].definitions[0].definition}`;
+    //     console.log(result)
 
-        let result = document.querySelector("#wordDescription");
-        result.innerHTML = `<p>${data[0].meanings[0].definitions[0].definition}`;
-        console.log(result)
-
-        // let output = data;
-        // console.log(output);
-      });
+    //     // let output = data;
+    //     // console.log(output);
+    //   });
 
 
 
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded",() => {
     // const options = {
     //   method: "GET",
     //   headers: {
-    //     "X-RapidAPI-Key": "",
+    //     "X-RapidAPI-Key": "c6079870camsh1a56f6e78d1aed1p1df6e4jsn0ba2ff61ebfe",
     //     "X-RapidAPI-Host": "dictionary-by-api-ninjas.p.rapidapi.com",
     //   },
     // };
@@ -38,3 +38,19 @@ document.addEventListener("DOMContentLoaded",() => {
     // }
   });
 });
+
+function wordSearch(word){
+  const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+  fetch(url)
+  .then((resp) => resp.json())
+  .then((data) => {
+    console.log(data);
+
+    let result = document.querySelector("#wordDescription");
+    result.innerHTML = `<p>${data[0].meanings[0].definitions[0].definition}`;
+    console.log(result)
+
+    // let output = data;
+    // console.log(output);
+  });
+}
