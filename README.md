@@ -1,4 +1,7 @@
-Name: Free Dictionary Application
+Project Name: Free Dictionary Application
+Author: Tiffany Wanjiru
+
+Description:
 
 This application aims to get the definitions, phonetics, part of speech of an word in the English language. 
 

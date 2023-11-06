@@ -36,13 +36,19 @@ function wordSearch(word) {
         console.log(meaning)
         meaning.textContent = `${data[0].meanings[1].partOfSpeech} : ${data[0].meanings[1].definitions[0].definition}`
       }
-      let rmkBtn = document.querySelector("#rmkButton");
-      rmkBtn.addEventListener("click",(e)=>{
-        let comment = document.querySelector("#remark");
-        let remark = comment.value;
-        console.log(word);
-      })
+      // let rmkBtn = document.querySelector("#rmkButton");
+      // rmkBtn.addEventListener("click",(e)=>{
+      //   let comment = document.querySelector("#remark");
+      //   let remark = comment.value;
+      //   console.log(word);
+      // })
       // console.log(data[0].meanings[1].definitions[0].definition)
       // console.log(data[0].meanings[1].partOfSpeech)
     });
+  const synonym =`https://www.stands4.com/services/v2/syno.php`
+  fetch(synonym)
+  .then((resp)=> resp.json())
+  .then((data)=>{
+    console.log(data)
+  })
 }
