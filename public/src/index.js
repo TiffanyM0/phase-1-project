@@ -45,14 +45,23 @@ function wordSearch(word) {
       let result = document.querySelector("#wordDescription");
       result.innerHTML = `
       <p class="return"> 
-      ${word}:${data[0].phonetic} <br>
+      ${word} ${data[0].phonetic} <br>
       ${data[0].meanings[0].partOfSpeech} <br>
-        definition: <br> ${data[0].meanings[0].definitions[0].definition}
+        definition: <br> ${data[0].meanings[0].definitions[0].definition}</p>
+      <p id=synonym class="return">${data[0].meanings[1].partOfSpeech} 
+      <br> ${data[0].meanings[1].definitions[0].definition}</p>
       `;
+      if(data[0].meanings[1].definitions[0].definition == undefined){
+        console.log("undefined")
+      } else{
+        let meaning = document.querySelector("#synonym");
+        console.log(meaning)
+        meaning.innerHTML = `<p> ${data[0].meanings[1].partOfSpeech}<br>${data[0].meanings[1].definitions[0].definition} <p>`
+      }
       console.log(data[0].meanings[1].definitions[0].definition)
       console.log(data[0].meanings[1].partOfSpeech)
-      for (let i = 0; i < 3, i++; ) {}
-      console.log(result);
+      // for (let i = 0; i < 3, i++; ) {}
+      // console.log(result);
 
       // let output = data;
       // console.log(output);
