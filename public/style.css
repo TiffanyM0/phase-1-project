@@ -2,7 +2,7 @@
     position: fixed;
     left: 0;
     right: 0;
-    height: 50%;
+    /* height: 50%; */
 }
 
 .working{
@@ -15,6 +15,7 @@
 .lower-half{
     bottom: 0;
     background-color: #0f445f;
+    height: 45%;
 }
 
 .search-input{
@@ -46,6 +47,7 @@
     top:40px;
     font-family: cursive;
     font-size: 70px;
+    color: whitesmoke;
 }
 
 .working{
@@ -57,7 +59,8 @@
 .wordDescription{
     padding: 5px;
     justify-content: center;
-    height:auto;
+    margin: 1rem auto;
+    max-width: 500px;
     background-color: #0484bb;
     font: inherit;   
     color: antiquewhite;
