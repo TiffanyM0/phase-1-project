@@ -1,20 +1,13 @@
-.working, .lower-half{
+.working{
     position: fixed;
     left: 0;
     right: 0;
     /* height: 50%; */
-}
-
-.working{
     background-color:#0484bb;
     top: 0;
+    bottom: 0%;
     text-align: center;
     height:auto;
-}
-
-.lower-half{
-    bottom: 0;
-    background-color: #0f445f;
 }
 
 .search-input{
