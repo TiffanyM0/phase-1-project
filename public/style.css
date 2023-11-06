@@ -53,7 +53,7 @@
     justify-content: center;
     margin: 1rem auto;
     max-width: 400px;
-    border-radius: 15px;
+    border-radius: none;
     background-color: wheat;
     font: inherit;   
     color:black;
