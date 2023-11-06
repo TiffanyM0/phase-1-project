@@ -45,9 +45,9 @@ function wordSearch(word) {
       let result = document.querySelector("#wordDescription");
       result.innerHTML = `
       <p class="return"> 
-      ${data[0].phonetic} <br>
+      ${word}:${data[0].phonetic} <br>
       ${data[0].meanings[0].partOfSpeech} <br>
-        Definition: <br> ${data[0].meanings[0].definitions[0].definition}
+        definition: <br> ${data[0].meanings[0].definitions[0].definition}
       `;
       console.log(data[0].meanings[1].definitions[0].definition)
       console.log(data[0].meanings[1].partOfSpeech)

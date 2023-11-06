@@ -59,8 +59,10 @@
     padding: 5px;
     justify-content: center;
     margin: 1rem auto;
-    max-width: 500px;
+    max-width: 400px;
+    border-radius: 15px;
     background-color: wheat;
     font: inherit;   
-    color:black
+    color:black;
+    text-align: left;
 }
