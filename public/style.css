@@ -8,14 +8,13 @@
 .working{
     background-color:#0484bb;
     top: 0;
-    color: white;
     text-align: center;
+    height:auto;
 }
 
 .lower-half{
     bottom: 0;
     background-color: #0f445f;
-    height: 45%;
 }
 
 .search-input{
@@ -56,12 +55,12 @@
     background-position: center;   
 }
 
-.wordDescription{
+.return{
     padding: 5px;
     justify-content: center;
     margin: 1rem auto;
     max-width: 500px;
-    background-color: #0484bb;
+    background-color: wheat;
     font: inherit;   
-    color: antiquewhite;
+    color:black
 }
