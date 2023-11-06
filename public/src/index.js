@@ -22,10 +22,12 @@ function wordSearch(word) {
       }
       let result = document.querySelector("#wordDescription");
       result.innerHTML = `
-      <p class="return"> 
-      ${word} ${data[0].phonetic} <br>
-      ${data[0].meanings[0].partOfSpeech} : ${data[0].meanings[0].definitions[0].definition}</p>
-      <p id=synonym class="return"></p>
+      <div class="defined">
+        <p class="return"> 
+        ${word} ${data[0].phonetic} <br>
+        ${data[0].meanings[0].partOfSpeech} : ${data[0].meanings[0].definitions[0].definition}</p>
+        <p id=synonym class="return"></p>
+      </div>
       `;
       if(data[0].meanings[1].definitions[0].definition == undefined){
         console.log("undefined")
@@ -34,6 +36,12 @@ function wordSearch(word) {
         console.log(meaning)
         meaning.textContent = `${data[0].meanings[1].partOfSpeech} : ${data[0].meanings[1].definitions[0].definition}`
       }
+      let rmkBtn = document.querySelector("#rmkButton");
+      rmkBtn.addEventListener("click",(e)=>{
+        let comment = document.querySelector("#remark");
+        let remark = comment.value;
+        console.log(word);
+      })
       // console.log(data[0].meanings[1].definitions[0].definition)
       // console.log(data[0].meanings[1].partOfSpeech)
     });
