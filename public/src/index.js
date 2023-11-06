@@ -14,6 +14,12 @@ function wordSearch(word) {
     .then((resp) => resp.json())
     .then((data) => {
       console.log(data);
+      if (data.message == undefined){
+        console.log("none")
+      } else {
+        let result = document.querySelector("#wordDescription");
+       result.innerHTML = `<p class = "return">${data.message}<p>`
+      }
       let result = document.querySelector("#wordDescription");
       result.innerHTML = `
       <p class="return"> 
